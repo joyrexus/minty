@@ -1,4 +1,4 @@
-{test, eq} = require 'testy'
+{test, eq} = require './lib/testy'
 {render, renderFile} = require 'minty'
 
 
