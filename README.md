@@ -27,6 +27,9 @@ console.log template data       # interpolate template w/ data
 fs = require 'fs'
 coffee = require 'coffee-script'
 
+The `render` method returns a template from template text or an 
+interpolated template if passed a data object. Ex:
+
 render = (text, data) -> 
   t = text.replace(/\n/g, '\\n').replace(/"/g, '\\"')
   f = coffee.eval '(data) -> "' + t + '"'
