@@ -27,6 +27,5 @@ test 'render method', ->
   expected = '<div class="ALPHA">'
   template = '<div class="#{ data.foo }">'
   eq expected, render(template, data)
-text = '<div class="#{data.group}">#{ data.name }</div>'
 
 test.status()
